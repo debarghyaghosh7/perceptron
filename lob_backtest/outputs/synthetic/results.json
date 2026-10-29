@@ -1,0 +1,137 @@
+{
+  "runs": {
+    "flat (sanity)": {
+      "final_pnl_quote": 0.0,
+      "n_trades": 0,
+      "total_notional": 0.0,
+      "total_fees": 0.0,
+      "pnl_bps_of_notional": 0.0,
+      "sharpe_annualised": 0.0,
+      "max_drawdown_quote": 0.0,
+      "mean_step_pnl": 0.0,
+      "hit_rate_steps": 0.0,
+      "avg_slip_bps": 0.0,
+      "turnover_per_min": 0.0,
+      "time_in_market": 0.0,
+      "median_decide_us": 7.763,
+      "p99_decide_us": 31.427229999999803,
+      "median_event_gap_ms": 47.509096
+    },
+    "frozen model": {
+      "final_pnl_quote": -8469.80526500391,
+      "n_trades": 656,
+      "total_notional": 54539352.65,
+      "total_fees": 5453.935265,
+      "pnl_bps_of_notional": -1.5529713598468813,
+      "sharpe_annualised": -534.7740915752512,
+      "max_drawdown_quote": -8692.326503503898,
+      "mean_step_pnl": -0.3604172453193153,
+      "hit_rate_steps": 0.4689372630549101,
+      "avg_slip_bps": 0.0018655114551519695,
+      "turnover_per_min": 35.25416726559639,
+      "time_in_market": 0.6830212765957446,
+      "median_decide_us": 10.862,
+      "p99_decide_us": 42.01534999999994,
+      "median_event_gap_ms": 47.509096,
+      "median_events_between_trades": 2.0
+    },
+    "adaptive model": {
+      "final_pnl_quote": -57967.98211153528,
+      "n_trades": 6783,
+      "total_notional": 570546371.115,
+      "total_fees": 57054.6371115,
+      "pnl_bps_of_notional": -1.0160082518490192,
+      "sharpe_annualised": -4120.706105655364,
+      "max_drawdown_quote": -57980.38211153528,
+      "mean_step_pnl": -2.4667226430440548,
+      "hit_rate_steps": 0.3312209547950993,
+      "avg_slip_bps": 0.002157800574840408,
+      "turnover_per_min": 364.5259398819212,
+      "time_in_market": 0.4707659574468085,
+      "median_decide_us": 3344.2965,
+      "p99_decide_us": 8404.113029999997,
+      "median_event_gap_ms": 47.509096,
+      "median_events_between_trades": 1.0
+    },
+    "oracle (ceiling)": {
+      "final_pnl_quote": 31262.71348597107,
+      "n_trades": 3607,
+      "total_notional": 464695565.14,
+      "total_fees": 46469.556513999996,
+      "pnl_bps_of_notional": 0.6727568720513284,
+      "sharpe_annualised": 1832.064513635467,
+      "max_drawdown_quote": -1767.815731502174,
+      "mean_step_pnl": 1.3303282334455775,
+      "hit_rate_steps": 0.5395784830290405,
+      "avg_slip_bps": 0.0020572318494323535,
+      "turnover_per_min": 193.84417885214356,
+      "time_in_market": 0.6613191489361702,
+      "median_decide_us": 7.713,
+      "p99_decide_us": 34.015589999999904,
+      "median_event_gap_ms": 47.509096,
+      "median_events_between_trades": 2.0
+    }
+  },
+  "forecast": {
+    "n": 16591,
+    "accuracy": 0.4347537821710566,
+    "balanced_f1": 0.23678978868032485,
+    "mcc": 0.009144687164797775,
+    "majority_baseline_acc": 0.49936712675546985,
+    "edge_over_majority": -0.06461334458441326,
+    "directional_auc": 0.5033531990726487,
+    "brier_up": 0.3860296798944387,
+    "confusion": [
+      [
+        6973,
+        98,
+        168
+      ],
+      [
+        912,
+        40,
+        115
+      ],
+      [
+        7983,
+        102,
+        200
+      ]
+    ]
+  },
+  "detector": {
+    "n_true_shifts": 2,
+    "n_detected": 2,
+    "n_missed": 0,
+    "recall": 1.0,
+    "n_false_alarms": 18,
+    "precision": 0.1,
+    "missed_at": [],
+    "false_alarm_at": [
+      7699,
+      9299,
+      10099,
+      10899,
+      11699,
+      12499,
+      13299,
+      14099,
+      14899,
+      16499,
+      17299,
+      18099,
+      18899,
+      19699,
+      20499,
+      21299,
+      22099,
+      22899
+    ],
+    "mean_delay_events": 599.0,
+    "median_delay_events": 599.0,
+    "max_delay_events": 599,
+    "false_alarms_per_1k_events": 0.7659574468085106,
+    "mean_delay_ms": 39690.701694,
+    "median_delay_ms": 39690.701694
+  }
+}

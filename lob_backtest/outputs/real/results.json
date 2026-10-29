@@ -1,0 +1,139 @@
+{
+  "runs": {
+    "flat (sanity)": {
+      "final_pnl_quote": 0.0,
+      "n_trades": 0,
+      "total_notional": 0.0,
+      "total_fees": 0.0,
+      "pnl_bps_of_notional": 0.0,
+      "sharpe_annualised": 0.0,
+      "max_drawdown_quote": 0.0,
+      "mean_step_pnl": 0.0,
+      "hit_rate_steps": 0.0,
+      "avg_slip_bps": 0.0,
+      "turnover_per_min": 0.0,
+      "time_in_market": 0.0,
+      "median_decide_us": 5.173,
+      "p99_decide_us": 21.042880000000018,
+      "median_event_gap_ms": 100.01259999999999
+    },
+    "buy & hold": {
+      "final_pnl_quote": -4.584402500013388,
+      "n_trades": 1,
+      "total_notional": 83044.02500000001,
+      "total_fees": 8.3044025,
+      "pnl_bps_of_notional": -0.5520448340519848,
+      "sharpe_annualised": -61.850357029451324,
+      "max_drawdown_quote": -12.324402500004075,
+      "mean_step_pnl": -0.0009525041554152063,
+      "hit_rate_steps": 0.375,
+      "avg_slip_bps": 0.001204180699754609,
+      "turnover_per_min": 0.12464666726041967,
+      "time_in_market": 0.49864949096197797,
+      "median_decide_us": 5.274,
+      "p99_decide_us": 23.33960000000003,
+      "median_event_gap_ms": 100.01259999999999,
+      "median_events_between_trades": 0.0
+    },
+    "random": {
+      "final_pnl_quote": -82.62968300003027,
+      "n_trades": 10,
+      "total_notional": 996596.83,
+      "total_fees": 99.65968299999999,
+      "pnl_bps_of_notional": -0.8291184610734741,
+      "sharpe_annualised": -591.0069147490657,
+      "max_drawdown_quote": -91.46559650002969,
+      "mean_step_pnl": -0.017168020569297792,
+      "hit_rate_steps": 0.21428571428571427,
+      "avg_slip_bps": 0.0012041068563066093,
+      "turnover_per_min": 1.2464666726041966,
+      "time_in_market": 0.29295657594016206,
+      "median_decide_us": 5.494,
+      "p99_decide_us": 25.040320000000044,
+      "median_event_gap_ms": 100.01259999999999,
+      "median_events_between_trades": 119.0
+    },
+    "model + threshold": {
+      "final_pnl_quote": -2028.7874990005039,
+      "n_trades": 244,
+      "total_notional": 20263574.99,
+      "total_fees": 2026.357499,
+      "pnl_bps_of_notional": -1.0011991960953106,
+      "sharpe_annualised": -4103.107551308271,
+      "max_drawdown_quote": -2028.7874990005039,
+      "mean_step_pnl": -0.4215224390194274,
+      "hit_rate_steps": 0.004081632653061225,
+      "avg_slip_bps": 0.001204131058845003,
+      "turnover_per_min": 30.4137868115424,
+      "time_in_market": 0.0708497818408477,
+      "median_decide_us": 6.476,
+      "p99_decide_us": 24.636080000000057,
+      "median_event_gap_ms": 100.01259999999999,
+      "median_events_between_trades": 2.0
+    },
+    "model + ks-adapt": {
+      "final_pnl_quote": -315.9460040000828,
+      "n_trades": 38,
+      "total_notional": 3155760.0399999996,
+      "total_fees": 315.576004,
+      "pnl_bps_of_notional": -1.0011724592345204,
+      "sharpe_annualised": -1583.879251937789,
+      "max_drawdown_quote": -315.9460040000828,
+      "mean_step_pnl": -0.0656442975275468,
+      "hit_rate_steps": 0.02564102564102564,
+      "avg_slip_bps": 0.0012041473238116544,
+      "turnover_per_min": 4.736573355895947,
+      "time_in_market": 0.013089549137751922,
+      "median_decide_us": 32.756,
+      "p99_decide_us": 9108.73092,
+      "median_event_gap_ms": 100.01259999999999,
+      "median_events_between_trades": 3.0
+    },
+    "oracle (ceiling)": {
+      "final_pnl_quote": -50.87575000003084,
+      "n_trades": 10,
+      "total_notional": 830457.5,
+      "total_fees": 83.04575,
+      "pnl_bps_of_notional": -0.612623162534276,
+      "sharpe_annualised": -415.60965019072773,
+      "max_drawdown_quote": -54.18937550001222,
+      "mean_step_pnl": -0.010570486183260095,
+      "hit_rate_steps": 0.4117647058823529,
+      "avg_slip_bps": 0.0012041555486532248,
+      "turnover_per_min": 1.2464666726041966,
+      "time_in_market": 0.0054020361520880945,
+      "median_decide_us": 11.366,
+      "p99_decide_us": 67.33464,
+      "median_event_gap_ms": 100.01259999999999,
+      "median_events_between_trades": 8.0
+    }
+  },
+  "forecast": {
+    "n": 2379,
+    "accuracy": 0.9747793190416141,
+    "balanced_f1": 0.329076202639421,
+    "mcc": -0.009607739162570338,
+    "majority_baseline_acc": 0.9890710382513661,
+    "edge_over_majority": -0.01429171920975203,
+    "directional_auc": 0.33333333333333337,
+    "brier_up": 0.008417370224165393,
+    "confusion": [
+      [
+        0,
+        18,
+        0
+      ],
+      [
+        19,
+        2319,
+        15
+      ],
+      [
+        0,
+        8,
+        0
+      ]
+    ]
+  },
+  "detector": null
+}
